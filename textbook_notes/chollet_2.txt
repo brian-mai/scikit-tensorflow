@@ -4,3 +4,17 @@ Chapter 2 Mathematical building blocks of neural networks
 - Tensors are buckets of numbers of a specific shape and a certain rank (dimensionality)
     > can be interpreted as a 3d array?
     > vector 1d, matrix 2d, tensor 3d+ (numpy.txt)
+
+- Class: category in classification problem
+- Samples: Data points
+- Label: class associated with specific sample
+- Layer: filter for data (data-processing module that extracts representations)
+
+Compilation:
+- loss function: network uses to measure performance on training data 
+- optimizer: way for network to update itself based on data and loss function 
+
+Workflow:
+1. feed training data into neural network
+2. ask network to make predictions
+3. verify conditions labels
