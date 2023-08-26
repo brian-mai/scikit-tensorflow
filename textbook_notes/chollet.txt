@@ -1,0 +1,75 @@
+------------------------------------------------------------------------------
+Chapter 1 What is Deep Learning? 
+
+1.1 Artificial intelligence, machine learning, and deep learning (4)
+
+AI is a general field that encompasses machine learning and deep learning
+and also includes many more approaches that don’t involve any learning
+
+- symbolic AI (50s - 80s) = explicit rules couldn't figure out complex problems -> replaced by ML
+- ML as a programming paradigm accepts data and answers as input and returns rules
+    - rules applied to new data returns original answers
+    - ML systems are trained, presented many examples to find statistical structure
+    - large complex datasets -> little mathematical theory, engineering oriented
+
+What do machine learning algorithms do?
+Requisites:
+    - input data points
+    - examples of expected output
+    - measurement if algorithm is good -> adjustments (learning)
+        - learning describes an automatic search process for better representations
+        - training a model = capturing data patterns
+
+Representation - different way to look at data, represent/encode data,
+    e.g. different representations of color (RGB, hex, etc.)
+
+- TLDR; machine-learning model transforms input data into meaningful output, process that is learned from
+    exposure to examples of input/output (searching for useful representations) with feedback signal. 
+
+- deep learning emphasizes successive layers of representations
+- layered reps generally learned via neural networks
+- specs of layer actions to input data in "weights" aka parameters, such that nn is parametized by weights
+    - initially random
+- loss / objective function: distance score between predictions and target
+    - distance score serves as feedback signal to adjust weights
+    - optimizer / backpropagation algorithm updates, training loop to minimize distance score
+    - SEE FIGURE 1.9 (11)
+- TLDR; deep learning = multistage way to learn data representations
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.2 Brief History of Machine Learning (14)
+
+- Probabilistic modeling -> application of stats to data analysis
+    - Naive Bayes algorithm
+- logistic regression (logreg) "hello world of ML??"
+    - classification 
+- Early nn -> backpropagation (train parametric operation chain with "gradient-descent optimization")
+- kernel methods, support vector machines (good decision boundaries / separation hyperplane -> maximize margin)
+- decision trees
+    - splits and depth
+    - random forest algo -> widely applicable in shallow machine-learning
+    - gradient boosting machine -> iteratively train models addressing weak points of previous model
+- computer vision (understand digital images)
+    - deep convolutional neural network -> convnet as go-to algorithm 
+- deep learning automates crucial step in ml workflow: feature engineering
+    - as opposed to manually engineering good layers of representations
+    - layers learn jointly (same time) rather than greedily (in succession)
+    Two characteristics of how deep learning learns from data:
+        - incrementally develops increasingly complex reps
+        - reps learned jointly   
+- kaggle competitions? 
+    - gradient boosting for structured data (XGBoost library), deep learning for perceptual (Keras library, e.g. img classification)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.3 Why Deep Learning (now)? (20)
+Drivers of ML: Hardware, Datasets, Algorithmic advances
+    - as an engineering science, needs appropriate resources rather than theory
+- NVIDIA developing fast chips (graphical processing units [GPU])
+    - for photorealistic gaming, render complex 3D scenes
+    - CUDA -> implementations of neural nets
+- internet enables massive datasets, tagged images/media
+- key features of DL: simplicity, scalability, versatility/reusability
+Moore's law - number of transistors in an integrated circuit (IC) doubles about every two years
+
+------------------------------------------------------------------------------
+Chapter 2 Mathematical building blocks of neural networks
