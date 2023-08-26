@@ -1,0 +1,25 @@
+The steps to building and using a model are:
+
+Define: What type of model will it be? A decision tree? Some other type of model? Some other parameters of the model type are specified too.
+Fit: Capture patterns from provided data. This is the heart of modeling.
+Predict: Just what it sounds like
+Evaluate: Determine how accurate the model's predictions are.
+
+Model Validity -> predictive accuracy as a measure of quality
+- Mean Absolute Error (MAE) -> average of absolute value of each error (actual - predicted)
+- In-sample scores are bad (same sample for building and eval)
+
+Underfitting/Overfitting
+- leaves with few houses make predictions close to house value 
+    - unreliable for new data -> overfitting
+- model not capturing patterns, bad on training data -> underfitting
+- max_leaf_nodes argument
+
+Here's the takeaway: Models can suffer from either:
+
+Overfitting: capturing spurious patterns that won't recur in the future, leading to less accurate predictions, or
+Underfitting: failing to capture relevant patterns, again leading to less accurate predictions.
+- validation data measures a candidate model's accuracy. this lets us try many candidate models and keep the best one.
+
+Random Forests - more sophisicated than decision trees
+Machine learning competitions
