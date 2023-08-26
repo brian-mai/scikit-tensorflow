@@ -1,2 +1,6 @@
 ----------------------------------------------------------
 Chapter 2 Mathematical building blocks of neural networks
+
+- Tensors are buckets of numbers of a specific shape and a certain rank (dimensionality)
+    > can be interpreted as a 3d array?
+    > vector 1d, matrix 2d, tensor 3d+ (numpy.txt)
