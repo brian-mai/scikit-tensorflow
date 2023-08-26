@@ -1,0 +1,39 @@
+https://numpy.org/devdocs/user/absolute_beginners.html
+
+What is NumPy? (Numerical Python)
+
+- NumPy’s main object is the homogeneous multidimensional array
+- wide variety of mathematical operations on arrays, library of high-level mathematical functions
+- NumPy API is used extensively in Pandas, SciPy, Matplotlib, scikit-learn, scikit-image 
+
+Difference between Python list and NumPy array:
+- np arrays much faster/compact
+- less memory, optimizations
+- ndarray (N-dimensional array) object 
+    attributes:
+    - ndarray.ndim -> number of axes (dimensions)
+    - ndarray.shape -> dimensions of the array
+    - ndarray.size -> total number of elements of the array
+    - ndarray.dtype -> object describing type of elements
+    - ndarray.itemsize -> size in bytes of each element of the array
+    - ndarray.data -> buffer containing the elements of the array
+    
+- vector is 1d, matrix is 2d, tensor is 3d+
+- dimensions called axes
+
+- np.array() -> creates np array
+- np.zeros() -> creates array filled with 0s
+- np.ones() -> creates array filled with 1s
+- np.empty() -> creates empty array
+- np.arange() -> creates array with range { np.arange(4) -> [0,1,2,3] }
+    - (first num, last num, step size) parameters
+- np.linspace() -> creates array with values spaced linearly
+    - np.linspace(0, 10, num=5) -> array([0, 2.5, 5, 7.5, 10])
+- dtype keyword 
+
+- np.sort()
+    - argsort, lexsort, searchsorted, partition
+    - https://numpy.org/devdocs/reference/generated/numpy.sort.html#numpy.sort
+
+- np.concatenate()
+    - https://numpy.org/devdocs/reference/generated/numpy.concatenate.html#numpy.concatenate

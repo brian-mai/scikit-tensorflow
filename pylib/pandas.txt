@@ -1,0 +1,7 @@
+- most important part is the DataFrame
+    - holds data like a table (think excel, sql)
+
+-boolean indexing allows us to filter the DataFrame by using boolean arrays or conditions
+leetcode ex: 
+    products: pd.DataFrame
+    df = products[(products['recyclable'] == 'Y')]
