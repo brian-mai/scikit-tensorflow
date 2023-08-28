@@ -1,0 +1,9 @@
+Data often has missing values (nonresponse, null)
+
+1. Drop columns with missing values
+    - good when relatively few missing values
+
+2. Imputation (fill na)
+    - from sklearn.impute import SimpleImputer
+    - can add column to track imputed entries for better predictions
+
