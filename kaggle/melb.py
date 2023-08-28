@@ -3,7 +3,7 @@ from sklearn.metrics import mean_absolute_error # model validity
 from sklearn.model_selection import train_test_split # breaks data into pieces
 from sklearn.tree import DecisionTreeRegressor
 
-melbourne_file_path = 'melb_data.csv'
+melbourne_file_path = 'melb_data/melb_data.csv'
 melbourne_data = pd.read_csv(melbourne_file_path) # load data with pandas
 
 # dropna drops missing values
